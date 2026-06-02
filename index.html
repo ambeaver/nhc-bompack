@@ -1308,6 +1308,83 @@ const packages = [
       { id:'she2', code:'BLREX10GR', name:'Bigleaf 4-port Expansion Card (Unit B)', amount:11.95, billingOverride:'No', required:false, chooseOne:true, quoteReq:false, deliveryReq:false, coGroup:'Expansion Card', minQty:0, maxQty:1 }
     ]
   }
+
+  // ── VeloCloud SD-WAN ────────────────────────────────────────────────────────
+  { id:'vc-std', internal:true, code:'VCSS', serviceType:'SD-WAN', name:'Standard SD-WAN Subscription', amount:0, billingOverride:'No', required:false, chooseOne:false, quoteReq:false, deliveryReq:false, subPackageIds:[], subPkgChooseOneGroup:'', overrides:{}, collapsed:true, parentId:null,
+    items:[
+      {id:'vs1',code:'VCSS100',name:'Standard SD-WAN 100Mb',amount:35.95,billingOverride:'No',required:true,chooseOne:true,quoteReq:false,deliveryReq:false,coGroup:'Bandwidth',minQty:1,maxQty:1,isDefault:true},
+      {id:'vs2',code:'VCSS200',name:'Standard SD-WAN 200Mb',amount:47.95,billingOverride:'No',required:true,chooseOne:true,quoteReq:false,deliveryReq:false,coGroup:'Bandwidth',minQty:1,maxQty:1},
+      {id:'vs3',code:'VCSS500',name:'Standard SD-WAN 500Mb',amount:98.95,billingOverride:'No',required:true,chooseOne:true,quoteReq:false,deliveryReq:false,coGroup:'Bandwidth',minQty:1,maxQty:1},
+      {id:'vs4',code:'VCSS1G',name:'Standard SD-WAN 1Gb',amount:202.95,billingOverride:'No',required:true,chooseOne:true,quoteReq:false,deliveryReq:false,coGroup:'Bandwidth',minQty:1,maxQty:1},
+      {id:'vs5',code:'VCSS2G',name:'Standard SD-WAN 2Gb',amount:311.95,billingOverride:'No',required:true,chooseOne:true,quoteReq:false,deliveryReq:false,coGroup:'Bandwidth',minQty:1,maxQty:1},
+      {id:'vs6',code:'VCSS10G',name:'Standard SD-WAN 10Gb',amount:600.95,billingOverride:'No',required:true,chooseOne:true,quoteReq:false,deliveryReq:false,coGroup:'Bandwidth',minQty:1,maxQty:1}
+    ]},
+  { id:'vc-ent', internal:true, code:'VCSE', serviceType:'SD-WAN', name:'Enterprise SD-WAN Subscription', amount:0, billingOverride:'No', required:false, chooseOne:false, quoteReq:false, deliveryReq:false, subPackageIds:[], subPkgChooseOneGroup:'', overrides:{}, collapsed:true, parentId:null,
+    items:[
+      {id:'ve1',code:'VCSE10',name:'Enterprise SD-WAN 10Mb',amount:25.95,billingOverride:'No',required:true,chooseOne:true,quoteReq:false,deliveryReq:false,coGroup:'Bandwidth',minQty:1,maxQty:1,isDefault:true},
+      {id:'ve2',code:'VCSE30',name:'Enterprise SD-WAN 30Mb',amount:47.95,billingOverride:'No',required:true,chooseOne:true,quoteReq:false,deliveryReq:false,coGroup:'Bandwidth',minQty:1,maxQty:1},
+      {id:'ve3',code:'VCSE50',name:'Enterprise SD-WAN 50Mb',amount:76.95,billingOverride:'No',required:true,chooseOne:true,quoteReq:false,deliveryReq:false,coGroup:'Bandwidth',minQty:1,maxQty:1},
+      {id:'ve4',code:'VCSE100',name:'Enterprise SD-WAN 100Mb',amount:98.95,billingOverride:'No',required:true,chooseOne:true,quoteReq:false,deliveryReq:false,coGroup:'Bandwidth',minQty:1,maxQty:1},
+      {id:'ve5',code:'VCSE200',name:'Enterprise SD-WAN 200Mb',amount:159.95,billingOverride:'No',required:true,chooseOne:true,quoteReq:false,deliveryReq:false,coGroup:'Bandwidth',minQty:1,maxQty:1},
+      {id:'ve6',code:'VCSE500',name:'Enterprise SD-WAN 500Mb',amount:305.95,billingOverride:'No',required:true,chooseOne:true,quoteReq:false,deliveryReq:false,coGroup:'Bandwidth',minQty:1,maxQty:1},
+      {id:'ve7',code:'VCSE1G',name:'Enterprise SD-WAN 1Gb',amount:325.95,billingOverride:'No',required:true,chooseOne:true,quoteReq:false,deliveryReq:false,coGroup:'Bandwidth',minQty:1,maxQty:1},
+      {id:'ve8',code:'VCSE2G',name:'Enterprise SD-WAN 2Gb',amount:345.95,billingOverride:'No',required:true,chooseOne:true,quoteReq:false,deliveryReq:false,coGroup:'Bandwidth',minQty:1,maxQty:1},
+      {id:'ve9',code:'VCSE10G',name:'Enterprise SD-WAN 10Gb',amount:1240.95,billingOverride:'No',required:true,chooseOne:true,quoteReq:false,deliveryReq:false,coGroup:'Bandwidth',minQty:1,maxQty:1}
+    ]},
+  { id:'vc-prm', internal:true, code:'VCSP', serviceType:'SD-WAN', name:'Premium SD-WAN Subscription', amount:0, billingOverride:'No', required:false, chooseOne:false, quoteReq:false, deliveryReq:false, subPackageIds:[], subPkgChooseOneGroup:'', overrides:{}, collapsed:true, parentId:null,
+    items:[
+      {id:'vp1',code:'VCSP10',name:'Premium SD-WAN 10Mb',amount:44.95,billingOverride:'No',required:true,chooseOne:true,quoteReq:false,deliveryReq:false,coGroup:'Bandwidth',minQty:1,maxQty:1,isDefault:true},
+      {id:'vp2',code:'VCSP30',name:'Premium SD-WAN 30Mb',amount:74.95,billingOverride:'No',required:true,chooseOne:true,quoteReq:false,deliveryReq:false,coGroup:'Bandwidth',minQty:1,maxQty:1},
+      {id:'vp3',code:'VCSP50',name:'Premium SD-WAN 50Mb',amount:115.95,billingOverride:'No',required:true,chooseOne:true,quoteReq:false,deliveryReq:false,coGroup:'Bandwidth',minQty:1,maxQty:1},
+      {id:'vp4',code:'VCSP100',name:'Premium SD-WAN 100Mb',amount:154.95,billingOverride:'No',required:true,chooseOne:true,quoteReq:false,deliveryReq:false,coGroup:'Bandwidth',minQty:1,maxQty:1},
+      {id:'vp5',code:'VCSP200',name:'Premium SD-WAN 200Mb',amount:267.95,billingOverride:'No',required:true,chooseOne:true,quoteReq:false,deliveryReq:false,coGroup:'Bandwidth',minQty:1,maxQty:1},
+      {id:'vp6',code:'VCSP500',name:'Premium SD-WAN 500Mb',amount:462.95,billingOverride:'No',required:true,chooseOne:true,quoteReq:false,deliveryReq:false,coGroup:'Bandwidth',minQty:1,maxQty:1},
+      {id:'vp7',code:'VCSP1G',name:'Premium SD-WAN 1Gb',amount:640.95,billingOverride:'No',required:true,chooseOne:true,quoteReq:false,deliveryReq:false,coGroup:'Bandwidth',minQty:1,maxQty:1},
+      {id:'vp8',code:'VCSP2G',name:'Premium SD-WAN 2Gb',amount:808.95,billingOverride:'No',required:true,chooseOne:true,quoteReq:false,deliveryReq:false,coGroup:'Bandwidth',minQty:1,maxQty:1},
+      {id:'vp9',code:'VCSP10G',name:'Premium SD-WAN 10Gb',amount:2006.95,billingOverride:'No',required:true,chooseOne:true,quoteReq:false,deliveryReq:false,coGroup:'Bandwidth',minQty:1,maxQty:1}
+    ]},
+  { id:'vc-edge-710', internal:true, code:'VC7105GR', serviceType:'SD-WAN', name:'VeloCloud Edge 710 (Standard)', amount:0, billingOverride:'No', required:false, chooseOne:false, quoteReq:false, deliveryReq:true, subPackageIds:[], subPkgChooseOneGroup:'', overrides:{}, collapsed:true, parentId:null,
+    items:[
+      {id:'e710a',code:'VC7105GR',name:'VeloCloud Edge 710 - Rental',amount:39.95,billingOverride:'No',required:true,chooseOne:false,quoteReq:false,deliveryReq:true,coGroup:'',minQty:1,maxQty:1},
+      {id:'e710b',code:'VC7105GS',name:'VeloCloud Edge 710 - Support',amount:6.95,billingOverride:'No',required:true,chooseOne:false,quoteReq:false,deliveryReq:false,coGroup:'',minQty:1,maxQty:1}
+    ]},
+  { id:'vc-edge-710w', internal:true, code:'VC710WR', serviceType:'SD-WAN', name:'VeloCloud Edge 710 Wireless', amount:0, billingOverride:'No', required:false, chooseOne:false, quoteReq:false, deliveryReq:true, subPackageIds:[], subPkgChooseOneGroup:'', overrides:{}, collapsed:true, parentId:null,
+    items:[
+      {id:'e710wa',code:'VC710WR',name:'VeloCloud Edge 710 Wireless - Rental',amount:19.95,billingOverride:'No',required:true,chooseOne:false,quoteReq:false,deliveryReq:true,coGroup:'',minQty:1,maxQty:1},
+      {id:'e710wb',code:'VC710WS',name:'VeloCloud Edge 710 Wireless - Support',amount:4.95,billingOverride:'No',required:true,chooseOne:false,quoteReq:false,deliveryReq:false,coGroup:'',minQty:1,maxQty:1}
+    ]},
+  { id:'vc-edge-720', internal:true, code:'VC720R', serviceType:'SD-WAN', name:'VeloCloud Edge 720', amount:0, billingOverride:'No', required:false, chooseOne:false, quoteReq:false, deliveryReq:true, subPackageIds:[], subPkgChooseOneGroup:'', overrides:{}, collapsed:true, parentId:null,
+    items:[
+      {id:'e720a',code:'VC720R',name:'VeloCloud Edge 720 - Rental',amount:45.95,billingOverride:'No',required:true,chooseOne:false,quoteReq:false,deliveryReq:true,coGroup:'',minQty:1,maxQty:1},
+      {id:'e720b',code:'VC720S',name:'VeloCloud Edge 720 - Support',amount:9.95,billingOverride:'No',required:true,chooseOne:false,quoteReq:false,deliveryReq:false,coGroup:'',minQty:1,maxQty:1}
+    ]},
+  { id:'vc-edge-740', internal:true, code:'VC740R', serviceType:'SD-WAN', name:'VeloCloud Edge 740', amount:0, billingOverride:'No', required:false, chooseOne:false, quoteReq:false, deliveryReq:true, subPackageIds:[], subPkgChooseOneGroup:'', overrides:{}, collapsed:true, parentId:null,
+    items:[
+      {id:'e740a',code:'VC740R',name:'VeloCloud Edge 740 - Rental',amount:107.95,billingOverride:'No',required:true,chooseOne:false,quoteReq:false,deliveryReq:true,coGroup:'',minQty:1,maxQty:1},
+      {id:'e740b',code:'VC740S',name:'VeloCloud Edge 740 - Support',amount:22.95,billingOverride:'No',required:true,chooseOne:false,quoteReq:false,deliveryReq:false,coGroup:'',minQty:1,maxQty:1}
+    ]},
+  { id:'vc-edge-4100', internal:true, code:'VC4100R', serviceType:'SD-WAN', name:'VeloCloud Edge 4100', amount:0, billingOverride:'No', required:false, chooseOne:false, quoteReq:true, deliveryReq:true, subPackageIds:[], subPkgChooseOneGroup:'', overrides:{}, collapsed:true, parentId:null,
+    items:[
+      {id:'e4100a',code:'VC4100R',name:'VeloCloud Edge 4100 - Rental',amount:468.95,billingOverride:'No',required:true,chooseOne:false,quoteReq:true,deliveryReq:true,coGroup:'',minQty:1,maxQty:1},
+      {id:'e4100b',code:'VC4100S',name:'VeloCloud Edge 4100 - Support',amount:90.95,billingOverride:'No',required:true,chooseOne:false,quoteReq:false,deliveryReq:false,coGroup:'',minQty:1,maxQty:1}
+    ]},
+  { id:'vc-edge-5100', internal:true, code:'VC5100R', serviceType:'SD-WAN', name:'VeloCloud Edge 5100', amount:0, billingOverride:'No', required:false, chooseOne:false, quoteReq:true, deliveryReq:true, subPackageIds:[], subPkgChooseOneGroup:'', overrides:{}, collapsed:true, parentId:null,
+    items:[
+      {id:'e5100a',code:'VC5100R',name:'VeloCloud Edge 5100 - Rental',amount:2430.95,billingOverride:'No',required:true,chooseOne:false,quoteReq:true,deliveryReq:true,coGroup:'',minQty:1,maxQty:1},
+      {id:'e5100b',code:'VC5100S',name:'VeloCloud Edge 5100 - Support',amount:466.95,billingOverride:'No',required:true,chooseOne:false,quoteReq:false,deliveryReq:false,coGroup:'',minQty:1,maxQty:1}
+    ]},
+  { id:'vc-sdwan', internal:false, code:'MGDVCE', serviceType:'SD-WAN', name:'VeloCloud Managed SD-WAN', amount:0, billingOverride:'No', required:false, chooseOne:false, quoteReq:false, deliveryReq:false, subPackageIds:['vc-std','vc-ent','vc-prm','vc-edge-710','vc-edge-710w','vc-edge-720','vc-edge-740','vc-edge-4100','vc-edge-5100'], subPkgChooseOneGroup:'', overrides:{}, collapsed:false, parentId:null,
+    items:[
+      {id:'vc1',code:'MGDVCE',name:'Managed VeloCloud Edge',amount:99.95,billingOverride:'No',required:true,chooseOne:false,quoteReq:false,deliveryReq:false,coGroup:'',minQty:1,maxQty:1},
+      {id:'vc2',code:'VMSDWMNTR',name:'SD-WAN Monitor',amount:1.95,billingOverride:'No',required:false,chooseOne:false,quoteReq:false,deliveryReq:false,coGroup:'',minQty:0,maxQty:1},
+      {id:'vc3',code:'VMVCEGCS',name:'VeloCloud Edge Cold Spare',amount:9.95,billingOverride:'No',required:false,chooseOne:false,quoteReq:false,deliveryReq:true,coGroup:'',minQty:0,maxQty:1}
+    ]},
+  { id:'vc-sdwan-ha', internal:false, code:'MGDVCEHA', serviceType:'SD-WAN', name:'VeloCloud Managed SD-WAN — High Availability', amount:0, billingOverride:'No', required:false, chooseOne:false, quoteReq:false, deliveryReq:false, subPackageIds:['vc-std','vc-ent','vc-prm','vc-edge-710','vc-edge-710w','vc-edge-720','vc-edge-740','vc-edge-4100','vc-edge-5100'], subPkgChooseOneGroup:'', overrides:{}, collapsed:false, parentId:null,
+    items:[
+      {id:'vha1',code:'MGDVCEHA',name:'Managed VeloCloud Edge — High Availability',amount:199.95,billingOverride:'No',required:true,chooseOne:false,quoteReq:false,deliveryReq:false,coGroup:'',minQty:1,maxQty:1},
+      {id:'vha2',code:'VMVCEGHA',name:'VeloCloud Edge — HA Pair',amount:49.95,billingOverride:'No',required:true,chooseOne:false,quoteReq:false,deliveryReq:true,coGroup:'',minQty:1,maxQty:1},
+      {id:'vha3',code:'VMSDWMNTR',name:'SD-WAN Monitor',amount:1.95,billingOverride:'No',required:false,chooseOne:false,quoteReq:false,deliveryReq:false,coGroup:'',minQty:0,maxQty:1}
+    ]}
 ];
 
 // ═══════════════════════════════════════════════════
